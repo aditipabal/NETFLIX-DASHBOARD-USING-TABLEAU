@@ -1,0 +1,1903 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='netflix_titles' inline='true' name='federated.1orh7nt1sd76jh199w4510n9kzi6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_titles' name='textscan.1nwdjq01v37p4f1eilu1614gec80'>
+            <connection class='textscan' directory='C:/Users/aditipabal/Downloads/archive (6)' filename='netflix_titles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1nwdjq01v37p4f1eilu1614gec80' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_NG' separator=','>
+            <column datatype='integer' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1nwdjq01v37p4f1eilu1614gec80' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_NG' separator=','>
+            <column datatype='integer' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₦&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_NG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='netflix_titles.csv' datatype='table' name='[__tableau_internal_object_id__].[netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE]' role='measure' type='quantitative' />
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#ff0000'>
+              <bucket>&quot;Movie&quot;</bucket>
+            </map>
+            <map to='#ff8b93'>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nigeria&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='netflix_titles.csv' id='netflix_titles.csv_5FC6C50BFA4A426CB221BB40200721CE'>
+            <properties context=''>
+              <relation connection='textscan.1nwdjq01v37p4f1eilu1614gec80' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_NG' separator=','>
+                  <column datatype='integer' name='show_id' ordinal='0' />
+                  <column datatype='string' name='type' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='string' name='director' ordinal='3' />
+                  <column datatype='string' name='cast' ordinal='4' />
+                  <column datatype='string' name='country' ordinal='5' />
+                  <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+                  <column datatype='integer' name='release_year' ordinal='7' />
+                  <column datatype='string' name='rating' ordinal='8' />
+                  <column datatype='string' name='duration' ordinal='9' />
+                  <column datatype='string' name='listed_in' ordinal='10' />
+                  <column datatype='string' name='description' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Description'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+            <column-instance column='[description]' derivation='None' name='[none:description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;1 Chance 2 Dance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]</column>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:description:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A163F9A3-A5EA-4553-AD2D-2D37E9B67BF3}' />
+    </worksheet>
+    <worksheet name='MOVIES AND TV DISTRIBUTION'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>MOVIES AND TV DISTRIBUTION</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[show_id]' derivation='CountD' name='[pcto:ctd:show_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' />
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' />
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' />
+              <color column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' />
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[pcto:ctd:show_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7EF3C809-7B38-4509-AC5D-A733AE447E67}' />
+    </worksheet>
+    <worksheet name='RATINGS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>RATINGS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:rating:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' scope='rows' value='' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]</rows>
+        <cols>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:rating:nk]</cols>
+      </table>
+      <simple-id uuid='{23F62AEF-DB8C-478C-B91F-C4A896412D13}' />
+    </worksheet>
+    <worksheet name='Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column-instance column='[rating]' derivation='None' name='[none:rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;1 Chance 2 Dance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]</column>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:rating:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{73F26B37-DE34-49C6-AB03-73A310A4783A}' />
+    </worksheet>
+    <worksheet name='Release Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;1 Chance 2 Dance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]</column>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:release_year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DF28B182-5F11-4C7E-AC10-D48861CF26BA}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{99F8DD42-C7FD-4743-AEC9-639CEE575E65}' />
+    </worksheet>
+    <worksheet name='Total movies &amp; tv shows by country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>Total movies &amp; TV shows by country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[Latitude (generated)]</column>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[Longitude (generated)]' field-type='quantitative' max='25459196.862467729' min='-12087820.37529226' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[Latitude (generated)]' field-type='quantitative' max='12957962.92962577' min='-9001166.660152059' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:country:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:country:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:country:nk]' value='false' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' />
+              <lod column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:country:nk]' />
+              <geometry column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1orh7nt1sd76jh199w4510n9kzi6].[Latitude (generated)]</rows>
+        <cols>[federated.1orh7nt1sd76jh199w4510n9kzi6].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2181DD39-9536-4DFC-9EC2-457D3D329A1F}' />
+    </worksheet>
+    <worksheet name='Total movies &amp; tv shows by year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000' fontsize='20' underline='true'>Total Movies &amp; TV shows by year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[date_added]' derivation='Year' name='[yr:date_added:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[yr:date_added:ok]' value='0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]</rows>
+        <cols>[federated.1orh7nt1sd76jh199w4510n9kzi6].[yr:date_added:ok]</cols>
+      </table>
+      <simple-id uuid='{83E4813D-0B82-4C79-A4EE-2E7D8DFB2D23}' />
+    </worksheet>
+    <worksheet name='date added'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column-instance column='[date_added]' derivation='None' name='[none:date_added:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;1 Chance 2 Dance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]</column>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:date_added:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1A667F3D-A6BA-4605-B952-5E5600B126AA}' />
+    </worksheet>
+    <worksheet name='duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[duration]' derivation='None' name='[none:duration:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;1 Chance 2 Dance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]</column>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:duration:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DD29AC17-9127-47F5-B0FB-DB86F92AD9D3}' />
+    </worksheet>
+    <worksheet name='genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[listed_in]' derivation='None' name='[none:listed_in:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:title:nk]' member='&quot;1 Chance 2 Dance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:type:nk]' member='&quot;Movie&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]</column>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:listed_in:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9B85E7CD-844B-4105-A44B-F05FE0417BD0}' />
+    </worksheet>
+    <worksheet name='top 10 movies'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ff0000'>TOP 10 GENRE</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+            <column-instance column='[show_id]' derivation='CountD' name='[ctd:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[listed_in]' derivation='None' name='[none:listed_in:nk]' pivot='key' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:listed_in:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNTD([show_id])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:listed_in:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:listed_in:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:listed_in:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:listed_in:nk]' value='252' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:listed_in:nk]</rows>
+        <cols>[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]</cols>
+      </table>
+      <simple-id uuid='{A94C85BB-3713-4AB9-8901-ED7A61E2C50D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1900' minheight='800' minwidth='1900' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='netflix_titles' name='federated.1orh7nt1sd76jh199w4510n9kzi6' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1orh7nt1sd76jh199w4510n9kzi6'>
+        <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='99158' x='421' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='90737' x='421' y='1000'>
+              <zone h='43127' id='11' name='top 10 movies' w='49632' x='41526' y='55873'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54873' id='12' name='RATINGS' w='23368' x='421' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54873' id='13' name='MOVIES AND TV DISTRIBUTION' w='19052' x='50737' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54873' id='14' name='Description' w='21369' x='69789' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43127' id='19' name='Total movies &amp; tv shows by year' w='41105' x='421' y='55873'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54873' id='21' name='Total movies &amp; tv shows by country' w='26948' x='23789' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='8421' x='91158' y='1000'>
+              <zone h='7625' id='15' mode='dropdown' name='Description' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type-v2='filter' w='8421' x='91158' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7625' id='16' mode='dropdown' name='Description' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type-v2='filter' values='relevant' w='8421' x='91158' y='8625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9000' id='20' name='Total movies &amp; tv shows by year' pane-specification-id='0' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' type-v2='color' w='8421' x='91158' y='16250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='22' name='Total movies &amp; tv shows by country' pane-specification-id='0' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' type-v2='color' w='8421' x='91158' y='25250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='23' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='54873' id='12' is-fixed='true' name='RATINGS' w='23368' x='421' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54873' id='21' is-fixed='true' name='Total movies &amp; tv shows by country' w='26948' x='23789' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='22' name='Total movies &amp; tv shows by country' pane-specification-id='0' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' type-v2='color' w='8421' x='91158' y='25250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54873' id='13' is-fixed='true' name='MOVIES AND TV DISTRIBUTION' w='19052' x='50737' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='15' mode='dropdown' name='Description' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type-v2='filter' w='8421' x='91158' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='16' mode='dropdown' name='Description' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type-v2='filter' values='relevant' w='8421' x='91158' y='8625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54873' id='14' is-fixed='true' name='Description' w='21369' x='69789' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43127' id='19' is-fixed='true' name='Total movies &amp; tv shows by year' w='41105' x='421' y='55873'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='20' name='Total movies &amp; tv shows by year' pane-specification-id='0' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' type-v2='color' w='8421' x='91158' y='16250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43127' id='11' is-fixed='true' name='top 10 movies' w='49632' x='41526' y='55873'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{61489C35-E3FE-4228-961C-16432844D9F9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total movies &amp; tv shows by year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{72B8D86B-6643-4A18-A8C2-48126FAC861F}' />
+    </window>
+    <window class='worksheet' name='Total movies &amp; tv shows by country'>
+      <cards>
+        <edge name='left'>
+          <strip size='172'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[ctd:show_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A844FD7-D4C6-4A51-9D45-A2E3824D37DC}' />
+    </window>
+    <window class='worksheet' name='top 10 movies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{290431DE-1822-45F0-8A7D-37F88DA41728}' />
+    </window>
+    <window class='worksheet' maximized='true' name='MOVIES AND TV DISTRIBUTION'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5013D6BB-AFF3-4A67-8142-BE47B5DD419C}' />
+    </window>
+    <window class='worksheet' name='RATINGS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DCCBC234-10FE-400A-B7CD-4AC16D97FC8A}' />
+    </window>
+    <window class='worksheet' name='Description'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{383532B3-B63B-4146-B9FA-7B6EF249A841}' />
+    </window>
+    <window class='worksheet' name='date added'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{489D3DC6-DABC-469E-A1F8-1BB43F7B49DC}' />
+    </window>
+    <window class='worksheet' name='duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DFA1AE0E-B590-4B2E-8BA7-076F7BB5AC2C}' />
+    </window>
+    <window class='worksheet' name='Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EE637B97-66A8-4E30-93C1-5AECA072980A}' />
+    </window>
+    <window class='worksheet' name='Release Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{56F9C7F3-FCC7-4D13-9CE4-A7BF03CF7F52}' />
+    </window>
+    <window class='worksheet' name='genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:type:nk]' show-all='false' type='filter' />
+            <card mode='dropdown' param='[federated.1orh7nt1sd76jh199w4510n9kzi6].[none:title:nk]' show-all='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C13AC9C4-783A-429B-B5D7-6333A17F6203}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Description'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='MOVIES AND TV DISTRIBUTION' />
+        <viewpoint name='RATINGS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total movies &amp; tv shows by country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total movies &amp; tv shows by year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top 10 movies'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AF5E64EB-69A1-4284-86DF-13E29EA10146}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5494D158-47D6-429B-B4A8-0CCDD8F9C93E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='MOVIES AND TV DISTRIBUTION' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
